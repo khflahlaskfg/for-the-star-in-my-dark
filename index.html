@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="is-locked">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>For the star in my dark♡</title>
+  <meta name="description" content="For the star in my dark♡">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="For the star in my dark♡">
+  <meta name="twitter:description" content="For the star in my dark♡">
+  <meta name="theme-color" content="#0c0609">
+  <meta property="og:title" content="For the star in my dark♡">
+  <meta property="og:description" content="For the star in my dark♡">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23e8b4b8' d='M16 28s-11-6.6-11-15A6 6 0 0 1 16 9a6 6 0 0 1 11 4c0 8.4-11 15-11 15z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Readex+Pro:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#hero">تخطّي إلى الحكاية</a>
+
+  <!-- طبقات الجو العام -->
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <canvas class="fx-layer" aria-hidden="true"></canvas>
+
+  <!-- البوابة الافتتاحية -->
+  <div class="gate" id="gate" role="button" tabindex="0" aria-label="إلمسي الشاشة لتبدأ الحكاية">
+    <div class="gate-inner">
+      <svg class="gate-heart" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <radialGradient id="gh" cx="50%" cy="40%" r="60%">
+            <stop offset="0" stop-color="#ffe9f0"/>
+            <stop offset="1" stop-color="#e8b4b8"/>
+          </radialGradient>
+        </defs>
+        <path d="M32 54s-21-12.6-21-28.4A11.2 11.2 0 0 1 32 19a11.2 11.2 0 0 1 21 6.6C53 41.4 32 54 32 54z" fill="url(#gh)"/>
+      </svg>
+      <p class="gate-line gate-line--1" data-words>ثلاثونَ يوماً… كأنّها عُمرٌ من النّور</p>
+      <p class="gate-line gate-line--2" data-words>من أنس إلى لين ♥️</p>
+      <p class="gate-line gate-line--3" data-words>إلمسِي الشاشة لتبدأ حكايتنا</p>
+    </div>
+  </div>
+
+  <!-- زر الصوت العائم -->
+  <button class="sound-toggle" type="button" aria-pressed="false" aria-label="تشغيل الموسيقى" hidden>
+    <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="sound-label">الموسيقى</span>
+  </button>
+
+  <main id="story">
+    <!-- المقدمة -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-wrap">
+        <p class="eyebrow hero-in" style="--i:0">ثلاثونَ يوماً · الفصلُ الأول من عُمرنا</p>
+        <h1 id="hero-title" class="hero-title hero-in" style="--i:1"><span class="hero-to">إلى</span> لين</h1>
+        <p class="hero-sub hero-in" style="--i:2">لولتي، دلوعتي، بنتي… هاي خمس حكايات صغيرة كتبتلكِ إياها بالنور، فصل لكل أسبوع وواحد زيادة لَقلبك.</p>
+        <a class="scroll-cue hero-in" style="--i:3" href="#ch1"><span>انزلي بهدوء</span><i aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <!-- الفصل ١ -->
+    <section class="chapter" id="ch1" aria-labelledby="ch1-title">
+      <div class="wrap chapter-grid">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">٠١</span>
+          <h2 id="ch1-title" class="ch-title">بلغة قلبي… وبكلّ لغات العالم</h2>
+        </header>
+        <div class="ch-stage">
+          <div class="stage" data-scene="heart">
+            <canvas aria-label="قلب كبير مرسوم من كلمات الحب بكل لغات العالم، وأبرزها: أحبكِ يا لين" role="img"></canvas>
+          </div>
+          <div class="stage-actions">
+            <button class="btn btn-ghost btn-replay" type="button" data-replay="heart"><span aria-hidden="true">↺</span> عيدي المشهد</button>
+            <span class="stage-hint">مرّري إصبعكِ على الكلمات</span>
+          </div>
+        </div>
+        <div class="ch-body">
+          <p>قبل شهر، دخلتي حياتي فجأة، وصار لكل كلمة معنى جديد. لو جمعت كل كلمات الحّب اللي موجوده بالأرض، ما كفتني غير كلمة وحده بتطلع من قلبي لقلبك: <em>بحبك يا لين.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفصل ٢ -->
+    <section class="chapter" id="ch2" aria-labelledby="ch2-title">
+      <div class="wrap chapter-grid">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">٠٢</span>
+          <h2 id="ch2-title" class="ch-title">تفاصيلك اللي ما بتنحكى</h2>
+        </header>
+        <div class="ch-stage">
+          <div class="stage" data-scene="rose">
+            <canvas aria-label="خط من نور يرسم شاباً يهدي وردة لحبيبته، ثم تُكتب فوقهما: حينَ عجزت الكلمات… أهديتك وردة تشبهك" role="img"></canvas>
+          </div>
+          <div class="stage-actions">
+            <button class="btn btn-ghost btn-replay" type="button" data-replay="rose"><span aria-hidden="true">↺</span> عيدي المشهد</button>
+            <span class="stage-hint">إلمسي الوردة</span>
+          </div>
+        </div>
+        <div class="ch-body">
+          <p>في لحظات معك، بحس إن الحكي العادي أقل بكثير من اللي بقلبي. نظرة منك، أو ضحكة عفوية بتطلع بنص كلامنا، كفيلة تخليني أنسى الدنيا وأختارك من جديد.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفصل ٣ -->
+    <section class="chapter" id="ch3" aria-labelledby="ch3-title">
+      <div class="wrap chapter-grid">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">٠٣</span>
+          <h2 id="ch3-title" class="ch-title">لأنّك بتحبي الورد… ولأنّ الورد بيغار منك</h2>
+        </header>
+        <div class="ch-stage">
+          <div class="stage" data-scene="bloom">
+            <canvas aria-label="ساق خضراء تنمو من غبار النجوم وتتفتح في قمتها وردة من آلاف الجزيئات الوردية والذهبية" role="img"></canvas>
+          </div>
+          <div class="stage-actions">
+            <button class="btn btn-soft btn-plant" type="button">إزرعي وردة كمان بلمستك 🌸</button>
+            <button class="btn btn-ghost btn-replay" type="button" data-replay="bloom"><span aria-hidden="true">↺</span> أعيدي المشهد</button>
+          </div>
+        </div>
+        <div class="ch-body">
+          <p>بعرف قديش بتحبي الورد، بس الحقيقة إنّك إنتي الوردة اللي فتّحت بقلبي من ثلاثين يوم. هالوردة المرسومة بالنور ما بتذبل أبداً… تماماً مثل غلاوتك ومكانك جوّا روحي.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفصل ٤ -->
+    <section class="chapter" id="ch4" aria-labelledby="ch4-title">
+      <div class="wrap chapter-grid">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">٠٤</span>
+          <h2 id="ch4-title" class="ch-title">من فوضى الأيام… إلى طمأنينة قُربك</h2>
+        </header>
+        <div class="ch-stage">
+          <div class="stage" data-scene="stars">
+            <canvas aria-label="نجوم مبعثرة تتجمع لترسم شاباً يحتضن حبيبته ويقبّل جبينها، وفوقهما: عسى ما ينتهي حبّنا أبداً" role="img"></canvas>
+          </div>
+          <div class="stage-actions">
+            <button class="btn btn-ghost btn-replay" type="button" data-replay="stars"><span aria-hidden="true">↺</span> عيدي المشهد</button>
+            <span class="stage-hint">المسي الرسمة وشوفي النجوم</span>
+          </div>
+        </div>
+        <div class="ch-body">
+          <p>كانت أيامي قبل ما أعرفك مثل نجوم مبعثره، ولما صرتي بحياتي، التمّت كل التفاصيل الحلوة و صارت إلك ملامح و وطن. كل يوم من هالثلاثين يوم قرّبني منك أكثر.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفصل ٥ -->
+    <section class="chapter" id="ch5" aria-labelledby="ch5-title">
+      <div class="wrap chapter-grid">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">٠٥</span>
+          <h2 id="ch5-title" class="ch-title">وعدُ الشهر الأول… وكلّ الشهور الجاية</h2>
+        </header>
+        <div class="ch-stage">
+          <div class="stage" data-scene="rain">
+            <canvas aria-label="مطر من نور وردي وبنفسجي، تتجمع قطراته لترسم شاباً متمسكاً بعمود إنارة يمدّ مظلته فوق حبيبته، وفوقهما: معك… حتى المطر بصير أكثر أمآن و دفئ" role="img"></canvas>
+          </div>
+          <div class="stage-actions">
+            <button class="btn btn-ghost btn-replay" type="button" data-replay="rain"><span aria-hidden="true">↺</span> أعيدي المشهد</button>
+            <span class="stage-hint">حرّكي إصبعك… والمطر بيميل معك</span>
+          </div>
+        </div>
+        <div class="ch-body">
+          <p>الشهر الأول هو بس أول سطر بحكايتنا. وعدي إلك يا لولتي إني أضلّ دايماً أمانك، و الضحكة اللي بتهوّن عليكي كل يوم، و القلب اللي بختارك بكل مرّه.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- عداد الثلاثين يوماً + الأسطوانة -->
+    <section class="days" id="days" aria-labelledby="days-title">
+      <div class="wrap days-grid">
+        <div class="days-card">
+          <p class="eyebrow">عدّاد قلبنا</p>
+          <h2 id="days-title" class="days-title">
+            <span class="days-num" data-count="30">٣٠</span>
+            <span class="days-word">يوماً… و إنتي أقرب للقلب</span>
+          </h2>
+          <div class="week-tabs" role="tablist" aria-label="أسابيع الشهر الأول">
+            <button role="tab" type="button" id="wt-1" aria-controls="week-panel" aria-selected="true" data-week="0">الأسبوع ١ · البداية</button>
+            <button role="tab" type="button" id="wt-2" aria-controls="week-panel" aria-selected="false" tabindex="-1" data-week="1">الأسبوع ٢ · اللهفة</button>
+            <button role="tab" type="button" id="wt-3" aria-controls="week-panel" aria-selected="false" tabindex="-1" data-week="2">الأسبوع ٣ · الأثر</button>
+            <button role="tab" type="button" id="wt-4" aria-controls="week-panel" aria-selected="false" tabindex="-1" data-week="3">الأسبوع ٤ · شهرنا الأول</button>
+          </div>
+          <div class="week-panel" id="week-panel" role="tabpanel" aria-labelledby="wt-1">
+            <p class="week-text"></p>
+          </div>
+          <ol class="day-dots" aria-label="ثلاثون يوماً"></ol>
+        </div>
+
+        <div class="vinyl-card">
+          <div class="turntable">
+            <div class="plinth">
+              <div class="platter">
+                <div class="record">
+                  <div class="record-label"><span>أنس</span><b>♡</b><span>لين</span></div>
+                </div>
+              </div>
+              <svg class="tonearm" viewBox="0 0 120 260" aria-hidden="true">
+                <circle cx="96" cy="24" r="18" class="ta-base"/>
+                <circle cx="96" cy="24" r="7" class="ta-pivot"/>
+                <path d="M96 24 L 92 170 Q 90 196 70 214" class="ta-arm"/>
+                <rect x="52" y="206" width="26" height="34" rx="4" transform="rotate(32 65 223)" class="ta-head"/>
+              </svg>
+              <span class="tt-light" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="vinyl-meta">
+            <p class="vinyl-title"></p>
+            <p class="vinyl-status" aria-live="polite">جاهزة للدوران</p>
+            <button class="btn btn-primary btn-vinyl" type="button" aria-pressed="false"><span class="ico" aria-hidden="true">▶</span> <span class="lbl">شغّلي الأسطوانة</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- الظرف المختوم -->
+    <section class="letter-sec" id="letter" aria-labelledby="letter-title">
+      <div class="wrap letter-wrap">
+        <p class="eyebrow">رسالة الشهر الأول</p>
+        <h2 id="letter-title" class="sec-title">ظرفٌ صغير… فيه قلبي كله</h2>
+
+        <div class="env-stage" data-state="closed">
+          <div class="envelope">
+            <div class="env-back"></div>
+            <div class="env-letter" aria-hidden="true"><span>دلوعتي و لولتي،</span><i></i><i></i><i></i></div>
+            <div class="env-front"></div>
+            <div class="env-flap"></div>
+            <button class="seal" type="button" aria-label="افتحي الرسالة"><span>بنتي ♡</span></button>
+          </div>
+          <p class="env-hint">المسي الختم… وافتحي رسالة شهرنا الأول</p>
+
+          
+<article class="letter-paper" tabindex="-1" aria-labelledby="letter-greet">
+    <h3 id="letter-greet" class="letter-greet">لولتي و دلوعتي،</h3>
+    <p>بتعرفي؟ وأنا بعمل هالموقع وبجمع فيه كل هالتفاصيل، كنت أفكر كيف ممكن أعمل إشي يعبّرلك عن اللي بقلبي، إشي يضل عندك و تقدري ترجعي تشوفيه و تتذكري أول شهر إلنا سوا.</p>
+    <p>اليوم كملنا أول شهر، ثلاثين يوم من وقت ما صرتي جزء من حياتي، ومن وقت ما صار لصوتك و ضحكتك و رسائلك مكان خاص بيومي. يمكن شهر واحد مش فترة طويلة، بس أنا عشت فيه تفاصيل ومشاعر كثير حلوة، وتعلّقت بأشياء فيكي يمكن إنتِي حتى ما بتنتبهي إلها.</p>
+    <p>بحب عفويتك، بحب ضحكتك، بحب طريقة حكيك، وبحب حتى التفاصيل الصغيرة اللي بتخليكي إنتِي، وما بشبهك فيها أي حدا ثاني. و بحب إني صرت ألاقي حالي بدي أحكيلك عن كل إشي بصير معي، حتى لو كان مجرد تفصيل عادي ما إله أي أهمية عند غيرك.</p>
+    <p>وبدي أحكيلك شغلة من قلبي، أنا بعرف إنه الحب مش بس إني أحكيلك بحبك، ولا إني أكتبلك أحلى حكي بالدنيا. الحب كمان إني أسمعك، وأفهمك، وأنتبه لتفاصيلك، وأكون حنون على قلبك، وآخذ مشاعرك بجدّية. وبدي أضل أتعلم شو بيفرحك، وشو بيريّحك، وكيف أحبك بالطريقة اللي بتستاهليها، وأثبتلك هالشي بأفعالي قبل كلامي.</p>
+    <p>ما بدي أوعدك إنه كل أيامنا رح تكون مثالية، بس بوعدك إنك تضلّي غالية عندي بكل حالاتك، وإنه يهمّني أفهمك قدّ ما بحب أحكي معك، وأسمعك قدّ ما بحب أسمع منك، ويكون حبي إلك واضح بالتفاصيل الصغيرة قبل الكلام الكبير.</p>.
+    <p>يا لين، أنا مبسوط إنك إنتِي اللي عشت هالشهر معك، ومتحمس لكل التفاصيل اللي لسه ما عشناها، لكل ضحكة جاية، ولكل وردة رح أجيبلك إياها، ولكل ذكرى جديدة رح نعملها سوا.</p>
+    <p>كل شهر وإنتي حبيبتي، و دلوعتي، والإنسانة اللي قلبي اختارها.</p>
+    <p>ولو بدي أبدأ هالحكاية من أول وجديد، رح أكون مبسوط إني لقيتك مرة ثانية.</p>
+    <p>بحبك يا لولتي، أكثر من كل الحكي اللي قدرت أكتبه هون.</p>
+    <p class="letter-sign">— أنس، إلكِ بكل الحب ♡</p>
+    <button class="btn btn-ghost btn-reseal" type="button">
+        <span aria-hidden="true">↺</span> رجّعي الرسالة للظرف
+    </button>
+</article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- رد لين -->
+    <section class="reply-sec" id="reply" aria-labelledby="reply-title">
+      <div class="wrap reply-wrap">
+        <p class="eyebrow">وهسا إجى دورك لين</p>
+        <h2 id="reply-title" class="sec-title reply-title">بعد ما خلصنا أول شهر سوا، احكيلي شو ببالك؟</h2>
+
+        <div class="choices" role="group" aria-label="اختاري شعوركِ">
+          <button class="choice" type="button" aria-pressed="false" data-choice="0">أحلى شهر بحياتي… ولسه العمر كله سوا ♥️</button>
+          <button class="choice" type="button" aria-pressed="false" data-choice="1">بحبك كثير… بس ضلّك دلّلني وجيبلي ورد 🌸😂</button>
+          <button class="choice" type="button" aria-pressed="false" data-choice="2">قلبي مليان حكي… هسا رح أحكيلك إياه كله 💌</button>
+        </div>
+
+        <div class="answer" aria-live="polite" hidden>
+          <p class="answer-from">أنس بيرد عليكِي:</p>
+          <p class="answer-text"></p>
+          <div class="answer-actions">
+            <a class="btn btn-primary btn-whatsapp" href="https://wa.me/" target="_blank" rel="noopener">ابعثي شعورك لأنس هسا 💌</a>
+            <button class="btn btn-ghost btn-copy" type="button">انسخي الرسالة</button>
+          </div>
+          <p class="copy-note" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-wrap">
+      <p class="foot-line">مكتوب بكلّ الحب — من أنس لَـ لين ♡</p>
+      <a class="btn btn-ghost" href="#hero">إرجعي للبداية <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
